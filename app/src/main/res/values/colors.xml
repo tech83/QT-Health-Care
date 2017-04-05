@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#01534b</color>
+    <color name="popup_layout_bg">#009688</color>
+    <color name="colorAccent">#01534b</color>
+    <color name="colorAccent_transparent">#8801534b</color>
+    <color name="white">#ffffff</color>
+    <color name="hint">#e1e1e1</color>
+    <color name="black">#000000</color>
+    <color name="button_disabled">#ccc</color>
+    <color name="darkGray">#515151</color>
+    <color name="yellow">#f5cd43</color>
+
+
+    <color name="toggle_hover">@color/white</color>
+    <color name="toggle_normal">@color/colorAccent</color>
+    <color name="toggle_active">@color/colorPrimary</color>
+    <color name="toggle_normal_off">@color/darkgray</color>
+
+    <color name="darkgray">#a9a9a9</color>
+</resources>

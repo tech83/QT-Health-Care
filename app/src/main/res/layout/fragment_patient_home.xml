@@ -1,0 +1,175 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:background="@drawable/user_bg"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingEnd="24dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingStart="24dp"
+            tools:context="in.quantumtech.qthelpcare.ui.patient.ui.fragments.PatientHomeFragment">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Find Doctor"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="Nearby"
+                    android:textColor="@color/yellow"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/tb_doctor"
+                    style="@style/ToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_margin="4dp"
+                    android:drawableLeft="@drawable/tb_hospital_white"
+                    android:textSize="10sp"
+                    android:drawablePadding="4dp"
+                    android:textAllCaps="false"
+                    android:textOff="@string/hospital"
+                    android:textOn="@string/hospital" />
+
+                <ToggleButton
+                    android:id="@+id/tb_diagnostic"
+                    style="@style/ToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_margin="4dp"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/tb_daignostic_white"
+                    android:drawablePadding="4dp"
+                    android:textAllCaps="false"
+                    android:textOff="Diagnose Lab"
+                    android:textOn="Diagnose Lab" />
+
+                <ToggleButton
+                    android:id="@+id/tb_clinic"
+                    style="@style/ToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_margin="4dp"
+                    android:textSize="10sp"
+                    android:drawablePadding="4dp"
+                    android:drawableLeft="@drawable/tb_clinic_white"
+                    android:textAllCaps="false"
+                    android:textOff="@string/clinic"
+                    android:textOn="@string/clinic" />
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="Search..."
+                    android:textSize="14sp"
+                    android:padding="8dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/state"
+                    android:layout_width="match_parent"
+                    android:paddingRight="8dp"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.AppCompatSpinner>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:paddingRight="8dp"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.AppCompatSpinner>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="Current Location"
+                    android:textSize="14sp"
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:adjustViewBounds="false"
+                    android:padding="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/img_pick_location"
+                    android:cropToPadding="false"
+                    app:srcCompat="@drawable/location_picker" />
+            </android.support.v7.widget.CardView>
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Search" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</layout>

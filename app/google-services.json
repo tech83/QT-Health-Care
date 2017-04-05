@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "878755529000",
+    "firebase_url": "https://qt-health-care.firebaseio.com",
+    "project_id": "qt-health-care",
+    "storage_bucket": "qt-health-care.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878755529000:android:8b45b18e37fcb306",
+        "android_client_info": {
+          "package_name": "in.quantumtech.qthelpcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878755529000-a3la64p804k1ppj38dpmvd2p1u970vaj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDODzE9gcgpFse9fFALVS4PPB7nk1lf3zs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
